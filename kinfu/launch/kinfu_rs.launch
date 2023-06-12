@@ -1,5 +1,6 @@
 <launch>
-  <include file="$(find realsense2_camera)/launch/rs_rgbd.launch" />
+  <include file="$(find realsense2_camera)/launch/rs_rgbd.launch">
+  </include>
   
   <node pkg="kinfu" type="kinfu" name="realsense_kinfu" output="screen">
     <param name="prefix_topic" value="/camera" />
@@ -10,8 +11,14 @@
     <param name="request_topic" value="/kinfu_request_topic" />
     <param name="extract_known_points" value="false" />
 
-    <param name="depth_height" type="int" value="480" />
-    <param name="depth_width" type="int" value="640" />
+    <param name="volume_resolution" type="int" value="512" />
+    <param name="volume_size" type="double" value="0.5" />
+
+    <param name="depth_height" type="int" value="1080" />
+    <param name="depth_width" type="int" value="1920" />
+    <!-- <param name="depth_height" type="int" value="720" /> -->
+    <!-- <param name="depth_width" type="int" value="1280" /> -->
+
   </node>
 
 </launch>
