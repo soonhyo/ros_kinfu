@@ -92,7 +92,7 @@
 
 #define PARAM_NAME_SHIFT_DISTANCE         "shift_distance"
 #define PARAM_SNAME_SHIFT_DISTANCE        "sd"
-#define PARAM_DEFAULT_SHIFT_DISTANCE      (double(1.5))
+#define PARAM_DEFAULT_SHIFT_DISTANCE      (double(2.5))
 
 #define PARAM_NAME_CUDA_DEVICE_ID         "cuda_device_id"
 #define PARAM_DEFAULT_CUDA_DEVICE_ID      (int(0))
